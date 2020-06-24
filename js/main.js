@@ -56,51 +56,19 @@
 // getStatusIncome();
 
 
-function stringsMake(user) {
-  if(user === typeof(Number)) {
-    return console.log('ты передал число');
-  }else {
-    return alert(' Ты передал что то другое');
-  }
-}
-stringsMake(5254);
+
 
 
 
                                             // -------- hard task -------------
-/*
-let lang = prompt("Введите на каком языке вам показать дни недели: 'ru' или 'en'");
-const weekOfRussian = "Понедельник, вторник, среда, четверг, пятница, суббота, неделя";
-const weekOfEnglish = "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday";
-if (lang === 'ru') {
-  console.log(`Дни недели на русском: ${weekOfRussian}`);
-} else if (lang === 'en') {
-console.log(`Days of the week in English: ${weekOfEnglish}`);
-} else {
-  console.log("Что то пошло не так, вы ввели неправальние значания!")
+
+function stringsMake(user) {
+  if(user != typeof(String)) {
+    console.log("ты  передал не строку");
+  }else {
+    console.log(' Ты передал строку');
+  }
 }
-*/
+stringsMake("ledp");
 
-// ------------ делаем все тоже самое только с помомощью конструкции switch -----
-/*
-let lang = prompt("Введите на каком языке вам показать дни недели: 'ru' или 'en'");
-const weekOfRussian = "Понедельник, вторник, среда, четверг, пятница, суббота, неделя";
-const weekOfEnglish = "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday";
-switch(lang) {
-    case "ru": 
-        console.log(`Дни недели на русском: ${weekOfRussian}`);
-        break;
-    case "en": 
-        console.log(`Days of the week in English: ${weekOfEnglish}`);
-        break;
-    default: 
-        console.log("Что то пошло не так, вы ввели неправальние значания!")
-        break;
-}
-*/
 
-// сдесь мы спрашиваем у посетителя его имя, и с помощью тернарного оператора выводим разные значения 
-// let namePerson = prompt("введите ваше имя с большой буквы:");
-
-// namePerson === "Артем" ? console.log("директор") : namePerson ==="Максим" ? console.log("преподаватель") : console.log("студент");
- 
